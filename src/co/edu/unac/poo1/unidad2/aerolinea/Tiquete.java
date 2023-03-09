@@ -1,25 +1,27 @@
 package co.edu.unac.poo1.unidad2.aerolinea;
 
-import java.util.Date;
+import java.time.LocalTime;
+import java.util.*;
 
 public class Tiquete {
     private String id;
     private Float precio;
     private Ruta ruta;
-    private Date fechaVuelo;
+    private LocalTime fechaVuelo;
     private TipoDePuesto claseDeVuelo;
     private String puesto;
 
     public Tiquete() {
     }
 
-    public Tiquete(String id, Float precio, Ruta ruta, Date fechaVuelo, TipoDePuesto claseDeVuelo, String puesto) {
+    public Tiquete(String id, Float precio, Ruta ruta, LocalTime fechaVuelo, TipoDePuesto claseDeVuelo, String puesto) {
         this.id = id;
         this.precio = precio;
         this.ruta = ruta;
         this.fechaVuelo = fechaVuelo;
         this.claseDeVuelo = claseDeVuelo;
         this.puesto = puesto;
+
     }
 
     public String getId() {
@@ -46,11 +48,11 @@ public class Tiquete {
         this.ruta = ruta;
     }
 
-    public Date getFechaVuelo() {
+    public LocalTime getFechaVuelo() {
         return fechaVuelo;
     }
 
-    public void setFechaVuelo(Date fechaVuelo) {
+    public void setFechaVuelo(LocalTime fechaVuelo) {
         this.fechaVuelo = fechaVuelo;
     }
 
