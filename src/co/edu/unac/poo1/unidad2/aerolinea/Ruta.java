@@ -4,12 +4,18 @@ public class Ruta {
     private String origen;
     private String destino;
 
+    //Constructor por defecto
     public Ruta(){
     }
 
+    //Constructor por parametros
     public Ruta(String origen, String destino){
         this.origen = origen;
         this.destino = destino;
+    }
+
+    public Ruta(String origen){
+        this.origen = origen;
     }
 
     public String getOrigen(){
